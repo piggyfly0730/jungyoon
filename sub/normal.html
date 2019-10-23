@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>normal_sub</title>
+     <link rel="stylesheet" href="../css/common.css">
+     <link rel="stylesheet" href="../css/normal.css">
+
+     <script src="../js/jquery-1.12.4.min.js"></script>
+     <script>
+        $(document).ready(function() {
+            var scrollT;
+            var timer = 0;
+
+            $('#first').stop().animate({top: 0, opacity: 1},500);
+
+            $(window).on('scroll', function () {
+            clearTimeout(timer);
+
+            timer = setTimeout(function () {
+                scrollT = $(this).scrollTop();
+                console.log(scrollT);
+
+                //반복문을 이용해서 .fade라는 이미지에 위치를 체크
+                //$(반복하려는대상).each(function (인덱스번호, 엘리먼트) {});
+                $('.fade').each(function () {
+                //조건(스크롤바가 움직인 거리가 나의 위치보다 더 커지면...)을 만족하는 경우만 눈에 보여지도록 animate()
+                if (scrollT > $(this).offset().top - 500) $(this).stop().animate({top: 0, opacity: 1});
+                //스크롤바를 다시 올린후 내릴때에도 효과가 반복적으로 나타남
+                else $(this).stop().animate({top: -50, opacity: 0});
+                }, 500);
+            }, 150);
+            });
+        });
+     </script>
+</head>
+<body>
+    <header id="header">
+        <div class="hf_wrap">
+            <h1 class="f_l"><a href="../index.html">GOYoon</a></h1>
+            <nav class="f_r">
+                <ul class="clearfix">
+                    <li><a href="http://gojungyoon.dothome.co.kr/" target="_blank">Dothome</a></li>
+                    <li><a href="https://codepen.io/kokokokoko/pens/showcase" target="_blank">CodPen</a></li>
+                    <li><a href="https://piggyfly.tistory.com/" target="_blank">Tstory</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+    
+    <section id="first">
+        <div class="contain">
+            <div class="deco"></div>
+            <div class="left">
+                <h1>NORMAL</h1>
+                <span>성인용품 판매 & 성전문 온라인 매거진</span>
+                <p><strong>Overview </strong>처음 연인과 관계를 가질때, 연인과의 관계가 만족스럽지 못할때, 산부인과의 가는 것이<br>
+                    두려울때, 성적인 지식이 필요할때,,,주변에 얘기할 사람이 마땅치 않아 고민해 본 적이<br>
+                    있을 것 입니다. 이런 고민을 해결하기 위해 ‘NORMAL’ 이라는 성인매거진을 설계하게<br>
+                    되었습니다.믿을 수 있는 유용한 정보, 흥미를 유발하는 성인용품, 고민을 털어놓을 수<br>
+                    있는 라이브 방송을 제공하여 이용자가 성에대해 자유롭게 소통할 수 있도록 하였습니다.
+                </p>
+            </div>
+            <div class="right">
+                <img src="../images/normal/header_mockup.png" alt="사이트화면">
+            </div>
+        </div>
+    </section>
+    <!-- //first -->
+
+    <section id="process" class="fade">
+        <div class="contain">
+           <div class="deco"></div>
+            
+           <div class="title">
+                <h2>SERVICE DESIGN PROCESS</h2>
+           </div>
+
+           <div class="cnt_box cleafix">
+               <div class="sub_title">
+                    <h3>Design Keyword 정의</h3>
+                    <p class="sub_ex" >사용자의 Need를 분석하여 핵심 키워드 구성</p>
+               </div>
+               <ul class="keyword">
+                   <li>
+                       <p>Keyword.1<br><strong>트렌디한</strong></p>
+                       <ul>
+                           <li>전반적인 Web Design에서<br>트렌디한 감성을 주기위해 노력했습니다.</li>
+                       </ul>
+                   </li>
+                   <li>
+                       <p>Keyword.2<br><strong>상징적인</strong></p>
+                       <ul>
+                           <li>사용자의 거부감을 고려,<br>
+                               상징적이고 위트있는 이미지 사용합니다.</li>
+                       </ul>
+                   </li>
+                   <li>
+                       <p>Keyword.3<br><strong>전문적인</strong></p>
+                       <ul>
+                           <li>전문적인고 올바른<br>
+                               문장으로 기사의 신뢰감을 높입니다.</li>
+                       </ul>
+                   </li>
+               </ul>
+           </div>
+           
+        </div>
+    </section>
+    <!-- //process -->
+    
+    <section id="goal" class="fade">
+       
+        <div class="contain">
+            
+            <div class="left f_l">
+                <div class="sub_title">
+                    <h3>Define Goal</h3>
+                    <p class="sub_ex">UX설계 과정과 Design Keyword 정의를 통해 Design 목적 설정</p>
+                </div>
+            
+                <ul class="goal_txt">
+                    <li>
+                        <strong>Who</strong>
+                        <span>성에대한 고민과 관심이 있는 성인들에게 </span>
+                    </li>
+                    <li>
+                        <strong>What</strong>
+                        <span>성에대한 다양한 지식과 믿고 쓸수 있는 성인용품 판매를</span>
+                    </li>
+                    <li>
+                        <strong>How</strong>
+                        <span>전문가의 신뢰가는 기사 / 다양한 연인들의 인터뷰 제공,<br>
+                            검증된 제품 판매 / 소통을 위한 라이브 방송을 제공합니다.</span>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="right f_r">
+                <img src="../images/normal/goal_img.png" alt="목표계획PPT">
+            </div>
+        </div>
+    </section>
+    <!-- //goal -->
+
+    <section id="visual" class="fade">
+        <div class="contain">
+            <div class="deco"></div>
+
+            <div class="title">
+                <h2>VISUAL DESIGN PROCESS </h2>
+            </div>
+            <div class="left f_l">
+                <div class="sub_title">
+                    <h3>Paper Prototyp & Wireframe</h3>
+                    <p class="sub_ex">Service Design Process를 통한 디자인 계획<br>
+                        Made by Paper, Adobe Photoshop, Illustrator.</p>
+                </div>
+                <button><a href="">페이퍼 프로포타입<br>영상 바로가기</a></button>
+            </div>
+
+            <div class="right f_r">
+                <img src="../images/normal/visual_img.png" alt="와이어프레임">
+            </div>
+        </div>
+    </section>
+    <!-- //visual -->
+
+    <section id="picture" class="fade">
+        <div class="contain">
+             <div class="sub_title">
+                 <h3>Our PIcture</h3>
+                 <p class="sub_ex">위의 과정을 모두 준수하여 프로젝트를 진행하는 모습입니다 :)</p>
+             </div>
+             <ul class="clearfix">
+                 <li class="f_l"><img src="../images/normal/photo01.jpg" alt="키워드를 찿고 있는사진"></li>
+                 <li class="f_l"><img src="../images/normal/photo02.jpg" alt="사이트계획 작성 사진"></li>
+                 <li class="f_l"><img src="../images/normal/photo03.jpg" alt="프로포타입사진"></li>
+                 <li class="f_l"><img src="../images/normal/photo04.jpg" alt="포토샵계획 사진"></li>
+             </ul>
+        </div>
+    </section>
+    
+    <section id="output" class="fade">
+        <div class="contain">
+            <div class="deco"></div>
+            <div class="title">
+                <h2>DESIGN OUTPUT</h2>
+            </div>
+          
+            <div class="color">
+                <div class="left f_l">
+                    <div class="sub_title">
+                        <h3>Color palette</h3>
+                        <p class="sub_ex">은밀하면서도 강렬한 느낌을 주기위한 선택 </p>
+                        <p class="sub_ex">깔끔하고 절제된 인상을 주기 위한 3가지 색깔</p>
+                    </div>
+                </div>
+
+                <div class="right f_r">
+                    <img src="../images/normal/color.jpg" alt="대표색깔세가지">
+                </div>
+             </div>  
+             <!-- //color -->
+
+             <div class="font">
+                <div class="left f_l">
+                    <div class="sub_title">
+                        <h3>Typography</h3>
+                        <p class="sub_ex">컨텐츠간의 느낌을 살리기 위한 4가지 폰트 사용</p>
+                        <p class="sub_ex">한글폰트와 영어폰트를 따로 지정하여 디자인</p>
+                        <p class="sub_ex">컨텐츠는 트렌디 하게, 폰트는 클래식하게 계획</p>
+                    </div>
+                </div>
+
+                <div class="right f_r">
+                    <img src="../images/normal/font.jpg" alt="대표폰트네가지">
+                </div>
+             </div>
+             <!-- //font -->
+
+             <div class="finally">
+                <div class="sub_title">
+                        <h3>Page Design</h3>
+                        <p class="sub_ex">이름을 클릭하면 해당 페이지로 이동합니다. Click GoGo!!</p>                        
+                </div>
+                <div class="normalsite cleafix">
+                    <ul>
+                        <li class="f_l"><a href="https://piggyfly0730.github.io/Normal/index.html">MAIN</a></li>
+                        <li class="f_l"><a href="https://piggyfly0730.github.io/Normal/article/index.html">CURTURE</a></li>
+                        <li class="f_l"><a href="https://piggyfly0730.github.io/Normal/culture/index.html">ARTICLE</a></li>
+                        <li class="f_l"><a href="https://piggyfly0730.github.io/Normal/scal/index.html">S CALENDAR</a></li>
+                        <li class="f_l"><a href="https://piggyfly0730.github.io/Normal/redroom/index.html">REDROOM</a></li>
+                    </ul>
+                </div>
+                <div class="allsite">
+                    <img src="../images/normal/allsite_img.jpg" alt=" 노멀사이트전체 이미지">
+                </div>
+             </div>
+             <!-- //finally -->
+        </div>
+        <!-- contain -->
+    </section>
+    <!-- //output -->
+
+    <footer id="footer">
+        <div>
+            <p>Thank you for watching</p>
+        </div>
+    </footer>
+    <!-- //footer -->
+    
+</body>
+</html>

@@ -1,0 +1,151 @@
+@charset "utf-8";
+@font-face{
+    font-family: NotoS;
+    font-weight: 200;
+    src: url("../font/NotoSansKR-Light.eot");
+    src: local("※"), 
+        url("../font/NotoSansKR-Light.woff") format("woff"),
+        url("../font/NotoSansKR-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: NotoS;
+    font-weight: 300;
+    src: url("../font/NotoSansKR-DemiLight.eot");
+    src: local("※"),
+        url("../font/NotoSansKR-DemiLight.woff") format("woff"),
+        url("../font/NotoSansKR-DemiLight.otf") format("opentype");
+}
+@font-face {
+    font-family: NotoS;
+    font-weight: 400;
+    src: url("../font/NotoSansKR-Regular.eot");
+    src: local("※"),
+        url("../font/NotoSansKR-Regular.woff") format("woff"),
+        url("../font/NotoSansKR-Regular.otf") format("opentype");
+}
+@font-face{
+    font-family: NotoS;
+    font-weight: 700;
+    src: url("../font/NotoSansKR-Bold.eot");
+    src: local("※"), 
+        url("../font/NotoSansKR-Bold.woff") format("woff"),
+        url("../font/NotoSansKR-Bold.otf") format("opentype");
+}
+@font-face{
+    font-family: NotoS;
+    font-weight: 900;
+    src: url("../font/NotoSansKR-Black.otf.eot");
+    src: local("※"), 
+        url("../font/NotoSansKR-Black.woff") format("woff"),
+        url("../font/NotoSansKR-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: NotoSItalic;
+    font-weight: 600;
+    src: url("../font/NotoSans-SemiBoldItalic.eot");
+    src: local("※"),
+        url("../font/NotoSans-SemiBoldItalic.woff") format("woff"),
+        url("../font/NotoSans-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face{
+    font-family: Neo;
+    font-weight: 400;
+    src: url("../font/Neothic.eot");
+    src: local("※"), 
+        url("../font/Neothic.woff") format("woff"),
+        url("../font/Neothic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: NotoSerif;
+    font-weight: 200;
+    src: url("../font/NotoSerifKR-Light.eot");
+    src: local("※"),
+        url("../font/NotoSerifKR-Light.eot") format("woff"),
+        url("../font/NotoSerifKR-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: NotoSerif;
+    font-weight: 500;
+    src: url("../font/NotoSerifKR-Medium.eot");
+    src: local("※"),
+        url("../font/NotoSerifKR-Medium.woff") format("woff"),
+        url("../font/NotoSerifKR-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: NotoSerif;
+    font-weight: 700;
+    src: url("../font/NotoSerifKR-Bold.eot");
+    src: local("※"),
+        url("../font/NotoSerifKR-Bold.woff") format("woff"),
+        url("../font/NotoSerifKR-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: NotoSerif;
+    font-weight: 900;
+    src: url("../font/NotoSerifKR-Black.eot");
+    src: local("※"),
+        url("../font/NotoSerifKR-Black.woff") format("woff"),
+        url("../font/NotoSerifKR-Black.otf") format("opentype");
+}
+
+
+/* reset */
+body, ul , h1, h2, h3, h4, h5, h6, a, p, figure, figcaption, button, th, td {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal;}
+header, nav, aside, section, article, footer {display: block;}
+body {width: 100%; color: #2c2c2c;  font-family: NotoS;}
+ul {list-style: none;}
+a:link, a:visited, a:hover, a:active {text-decoration: none; color: inherit; }
+img {vertical-align: top; border: none;}
+strong {font-style: normal; font-weight: normal;}
+button{background: none; border: none; cursor: pointer;}
+
+/* common class */
+.clearfix:after {content:''; display: block; clear: both;}
+.f_l {float: left;}
+.f_r {float: right;}
+.p_a {position: absolute;}
+.p_r {position: relative;}
+.blind {font-size: 0; line-height: 0; width: 1px; height: 1px; overflow: hidden; position: absolute; top: 0; left: -9999px; text-indent: -9999px;}
+.contain{width: 1400px; margin: 0 auto; height: 100%; padding: 0 20px;}
+
+/* header */
+#header {
+    font-family: NotoS;
+    z-index: 1000;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: rgba(241, 241, 241, 0.2); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
+}
+
+#header h1 {
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 30px;
+}
+#header nav ul {
+    font-size: 18px; 
+    font-weight: 700;
+    text-align: center;
+}
+#header nav ul li {float: left;  width: 120px;}
+#header nav ul li + li {margin-left: 40px;}
+#header nav ul li.on {text-shadow: 0 0 20px rgba(255,255,255,0.9);}
+#header nav ul li a {display: block; width: 120px;}
+
+#header.bg {border-color: rgba(0,0,0,0.4); color: #000;}
+#header.bg nav ul li {color: #000 !important;}
+#header.bg nav ul li.on {text-shadow: 0 0 20px rgba(0,0,0,0.4);}
+
+/* skip navigation
+#skip a {position: absolute; top: 0; left: -9999px; z-index: 1000;}
+#skip a:focus {left: 0; width: 100%; height: 40px; line-height: 40px; text-align: center; background: #f0f0f0; color: #000; font-weight: 700;} */
+
+

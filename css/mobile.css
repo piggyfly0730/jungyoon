@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*공통*/
+body{color: #000;}
+section.section{background: no-repeat 50% 0%;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: contain;}
+h3{font-weight: 900; font-size: 58px;}
+#cnt1,#cnt2,#cnt3,#cnt4,#cnt5,#cnt6{height: 100vh; box-sizing: border-box; }
+
+
+/*cnt1*/
+#cnt1{background-color: #d91229; color: #fff;}
+
+#cnt1 .contain{position: relative;}
+#cnt1 .deco{position: absolute; left: 0; top: 230px; width: 914px; height: 91px; 
+    background: url('../images/mobile/deco.png') no-repeat center; z-index: 100;}
+#cnt1 .left{position: absolute; left: 0; top: 290px; z-index: 200;}
+#cnt1 .left span{display: block; font-size: 28px;padding-bottom: 10px;}
+#cnt1 .left h2{font-weight: 900; font-size: 58px; padding-bottom: 10px;}
+#cnt1 .left p {font-size: 18px; line-height: 40px; padding-bottom: 20px;}
+#cnt1 .left .ps{display: inline-block; background: url(../images/mobile/ps.png) no-repeat center; width: 52px; height: 52px; padding-right: 10px;}
+#cnt1 .left .ai{display: inline-block; background: url(../images/mobile/ai.png) no-repeat center; width: 52px; height: 52px;}
+
+#cnt1 .right{position: absolute;right: 60px; top: 140px; z-index: 300;} 
+
+/*cnt2*/
+#cnt2{background: #fff; text-align: center;}
+#cnt2 h3{color: #d91229; padding:150px 0 130px 0;}
+#cnt2 .reason{width: 1130px; margin: 0 auto;}
+#cnt2 .reason > li{padding-top: 83px; width: 250px; height: 250px; border: 10px solid #d91229; border-radius: 50%; box-sizing: border-box; font-size: 18px; font-weight: 900;}
+#cnt2 .reason>li+li {margin-left: 190px;}
+#cnt2 .reason .text01 strong{padding-top: 6px; display: block; font-size: 28px; font-weight: normal;}
+#cnt2 .reason .text02 {position: relative; padding-top: 150px; font-weight: normal;}
+#cnt2 .reason .text02::before{position: absolute; left: 50%;  top: 100px; content: ''; width: 2px; height: 30px; background: #656565;}
+
+/*cnt3*/
+#cnt3{background: url('../images/mobile/concept_bg.jpg') no-repeat;background-size: cover; color: #fff; text-align: center;}
+#cnt3 h3{ padding:150px 0 10px 0;}
+#cnt3 p {font-size: 18px; padding-bottom: 140px;}
+#cnt3 ul {width: 1130px; margin: 0 auto; font-size: 40px; font-weight: 700; text-align: center;}
+#cnt3 ul li {width: 351px;}
+#cnt3 ul li +li{margin-left: 37px;}
+#cnt3 img{display: block; position: absolute; bottom: 0; left: 50%; margin-left:-684px;}
+/*cnt4*/
+#cnt4{background: #f5f5f5; color: #f44d23;}
+#cnt4 .left h3 {padding:150px 0 6px 0;}
+#cnt4 .left p{width: 350px; font-size: 18px; line-height: 38px;}
+#cnt4 .right {padding-top: 150px;}
+
+/*cnt5*/
+#cnt5{background: url('../images/mobile/concept_bg.jpg') no-repeat;background-size: cover; color: #fff; text-align: center;}
+#cnt5 .title h3{padding:100px 0 6px 0;}
+#cnt5 .title p {font-size: 18px; padding-bottom: 40px;}
+/*cnt6*/
+#cnt6{background: #f5f5f5; color: #f44d23; text-align: center;}
+#cnt6 .title h3{padding:100px 0 6px 0;}
+#cnt6 .title p{font-size: 18px;}
