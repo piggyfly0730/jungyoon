@@ -42,15 +42,27 @@ h3{font-weight: 900; font-size: 58px;}
 #cnt3 img{display: block; position: absolute; bottom: 0; left: 50%; margin-left:-684px;}
 /*cnt4*/
 #cnt4{background: #f5f5f5; color: #f44d23;}
-#cnt4 .left h3 {padding:150px 0 6px 0;}
-#cnt4 .left p{width: 350px; font-size: 18px; line-height: 38px;}
-#cnt4 .right {padding-top: 150px;}
+#cnt4 .right h3 {font-size: 46px; padding:200px 0 6px 0;}
+#cnt4 .right p{width: 270px; font-size: 18px; line-height: 38px;}
+#cnt4 .left { padding-top: 110px;}
+
+
 
 /*cnt5*/
-#cnt5{background: url('../images/mobile/concept_bg.jpg') no-repeat;background-size: cover; color: #fff; text-align: center;}
-#cnt5 .title h3{padding:100px 0 6px 0;}
-#cnt5 .title p {font-size: 18px; padding-bottom: 40px;}
+#cnt5{background: #f44d23; color: #fff;}
+#cnt5 .right h3 {font-size: 46px; padding:200px 0 6px 0;}
+#cnt5 .right p{width: 300px; font-size: 18px; line-height: 38px;}
+#cnt5 .left { padding-top: 100px;}
+
 /*cnt6*/
 #cnt6{background: #f5f5f5; color: #f44d23; text-align: center;}
-#cnt6 .title h3{padding:100px 0 6px 0;}
-#cnt6 .title p{font-size: 18px;}
+#cnt6 .title h3{font-size: 46px; padding:100px 0 6px 0;}
+#cnt6 .title p{font-size: 18px; padding-bottom: 40px;}
+#cnt6 .mockup{margin: 0 auto;}
+
+/*cnt7*/
+#cnt7{background: #efefef; color: #f44d23; text-align: center;}
+#cnt7 .title h3{font-size: 46px; padding:100px 0 6px 0;}
+#cnt7 .title p{font-size: 18px; padding-bottom: 40px;}
+#cnt7 .mockup{margin: 0 auto;}
+

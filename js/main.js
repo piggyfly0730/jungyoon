@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: ['본문1', '본문2', '본문3', '본문4', '본문5', '본문6', 'footer'],
+      navigationTooltips: ['머리말', '자기소개', '팀프로젝트', '모바일디자인', '배너디자인'],
       scrollBar: true
     });
     //모달 열기 클릭 이벤트
