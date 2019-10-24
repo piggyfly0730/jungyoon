@@ -12,8 +12,9 @@ span.dot{display: inline-block; margin-left: -8px; color: #73acb6;}
 .contain {position: relative;}
 .dot_deco{background: url('../images/main/dot_deco.png'); width: 44px; height: 37px; position: absolute;}
 .link{text-align: center; font-size: 16px; font-weight: 700;  font-family: NotoS;}
-.link li{float: left; box-sizing: border-box; border: 2px solid #a8a7a7; width: 170px; height: 46px; line-height: 45px;border-radius: 12px;}
-.link li:hover{font-size: 18px; transition: ease-in-out 0.3s; background-color:#a8a7a7; color: #fff;}
+.link li{float: left; }
+.link li a {display:block; box-sizing: border-box; border: 2px solid #a8a7a7; width: 170px; height: 46px; line-height: 45px;border-radius: 12px;}
+.link li a:hover{font-size: 18px; transition: ease-in-out 0.3s; background-color:#a8a7a7; color: #fff;}
 .link li + li {margin-left: 20px;}
 
 
