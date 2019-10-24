@@ -66,3 +66,23 @@ h3{font-weight: 900; font-size: 58px;}
 #cnt7 .title p{font-size: 18px; padding-bottom: 40px;}
 #cnt7 .mockup{margin: 0 auto;}
 
+
+/*인디케이터*/
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    
+    background: #000;
+
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: #000; 
+    font-family: arial, helvetica, sans-serif;
+
+}
+
+#fp-nav ul li a.active+.fp-tooltip {
+    opacity: 1;
+    width: 100px;
+    text-align: right;
+}
