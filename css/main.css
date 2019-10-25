@@ -111,7 +111,15 @@ span.dot{display: inline-block; margin-left: -8px; color: #73acb6;}
 
 #cnt3 .right{position: relative;}
 #cnt3 .right .mockup{background: url('../images/main/normal_mockup.png')no-repeat; position: absolute; top: 180px;}
+#cnt3 .right .mockup .main_page{background: #000; width: 401px; height: 224px; position: absolute; top:152px; left: 32px; overflow: hidden;}
+#cnt3 .right .mockup .main_page img{position: absolute; top: 0; left: 0;}
+#cnt3 .right .mockup .main_page img{animation: normalmove 6s infinite alternate;}
 
+@keyframes normalmove {
+  0%{top: 0;}
+  10%{top: 0;}
+  100%{top: -1119px;}
+}
 
 
 /*본문 cnt4*/
@@ -120,6 +128,17 @@ span.dot{display: inline-block; margin-left: -8px; color: #73acb6;}
 #cnt4 .cnt_tit::before{left: 0;}
 #cnt4 .cnt_tit::after{right: 0;}
 #cnt4 .sub_tit {color: #676767;}
+
+#cnt4 .left .mobile_page{width: 230px; height: 471px; background: blue; position: absolute; top: 230px; left: 268.5px; border-radius: 18px/16px; overflow: hidden;}
+#cnt4 .left .mobile_page img{position: absolute; top: 0; left: 0;}
+#cnt4 .left .mobile_page img{animation: mobilemove 4s infinite alternate;}
+
+@keyframes mobilemove {
+    0%{top: 0;}
+  8%{top: 0;}
+  100%{top: -527px;}
+}
+
 
 #cnt4 .right {text-align: left;}
 #cnt4 .right .txt_deco{position: absolute; top: 180px; right: 0px; background: url('../images/main/cnt04_deco.png')no-repeat; width: 914px; height: 91px; 
