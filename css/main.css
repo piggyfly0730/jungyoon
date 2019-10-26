@@ -129,7 +129,7 @@ span.dot{display: inline-block; margin-left: -8px; color: #73acb6;}
 #cnt4 .cnt_tit::after{right: 0;}
 #cnt4 .sub_tit {color: #676767;}
 
-#cnt4 .left .mobile_page{width: 230px; height: 471px; background: blue; position: absolute; top: 230px; left: 268.5px; border-radius: 18px/16px; overflow: hidden;}
+#cnt4 .left .mobile_page{width: 230px; height: 471px; position: absolute; top: 230px; left: 268.5px; border-radius: 18px/16px; overflow: hidden;}
 #cnt4 .left .mobile_page img{position: absolute; top: 0; left: 0;}
 #cnt4 .left .mobile_page img{animation: mobilemove 4s infinite alternate;}
 
