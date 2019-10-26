@@ -53,8 +53,8 @@ span.dot{display: inline-block; margin-left: -8px; color: #73acb6;}
 #cnt2 .contain .left .info li{margin-bottom: 15px;}
 #cnt2 .contain .left .info li span {color: #363aaf;}
 
-#cnt2 .contain .right{padding-top:100px; color:#000000; font-size: 18px;}
-#cnt2 .contain .right .dot_deco{top: 180px; left: 50%; margin-left:-44px;}
+#cnt2 .contain .right{padding-top:70px; color:#000000; font-size: 18px;}
+#cnt2 .contain .right .dot_deco{top: 160px; left: 50%; margin-left:-44px;}
 #cnt2 .contain .right .info_txt{padding: 26px 0 60px 0; line-height: 36px}
 #cnt2 .contain .right .info_txt strong{font-weight: 900;}
 #cnt2 .contain .right .link {margin-bottom:50px;} 

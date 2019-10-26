@@ -66,6 +66,9 @@ h3{font-weight: 900; font-size: 58px;}
 #cnt7 .title p{font-size: 18px; padding-bottom: 40px;}
 #cnt7 .mockup{margin: 0 auto;}
 
+/*footer*/
+#footer {background: #d91229; height: 150px; box-sizing: border-box; font-family: NotoS; color: #fff;}
+#footer p{text-align: center; font-weight: 900; font-size: 48px; line-height: 150px;}
 
 /*인디케이터*/
 #fp-nav ul li a span,
