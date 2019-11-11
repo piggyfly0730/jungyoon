@@ -35,7 +35,7 @@ span.dot{display: inline-block; margin-left: -8px; color: #73acb6;}
 }
 
 
-/*본문 cnt2*/
+/*본문 cnt2 자기소개*/
 #cnt2 {background-color: #fff; font-family:NotoSerif;} 
 #cnt2 .tit_box{margin-top: 170px;}
 
@@ -91,7 +91,7 @@ span.dot{display: inline-block; margin-left: -8px; color: #73acb6;}
 
 
 
-/* 본문 cnt3*/
+/* 본문 cnt3 팀프로젝트*/
 #cnt3{background: #f5f5f5; box-sizing: border-box;}
 #cnt3 .cnt_tit::before ,#cnt3 .cnt_tit::after {content: ''; position: absolute; top: 36px;  width: 540px; height: 2px; background: #2c2c2c;}
 #cnt3 .cnt_tit::before{left: 0;}
@@ -117,12 +117,12 @@ span.dot{display: inline-block; margin-left: -8px; color: #73acb6;}
 
 @keyframes normalmove {
   0%{top: 0;}
-  10%{top: 0;}
+  10%{top: 0;}/*너무 빠르게 보이지 않기 위해*/
   100%{top: -1119px;}
 }
 
 
-/*본문 cnt4*/
+/*본문 cnt4 개인프로젝트*/
 #cnt4{background: #d8eff3; }
 #cnt4 .cnt_tit::before ,#cnt4 .cnt_tit::after {content: ''; position: absolute; top: 36px;  width: 540px; height: 2px; background: #2c2c2c;}
 #cnt4 .cnt_tit::before{left: 0;}
@@ -135,7 +135,7 @@ span.dot{display: inline-block; margin-left: -8px; color: #73acb6;}
 
 @keyframes mobilemove {
     0%{top: 0;}
-  8%{top: 0;}
+  8%{top: 0;}/*너무 빠르게 보이지 않기 위해*/
   100%{top: -527px;}
 }
 
