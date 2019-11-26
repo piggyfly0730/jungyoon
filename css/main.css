@@ -154,7 +154,7 @@ span.dot{display: inline-block; margin-left: -8px; color: #73acb6;}
 
 
 /*footer*/
-#footer {background: #ebebeb; height: 556px; box-sizing: border-box; font-family: NotoS; color: #000;}
+#footer {background: #ebebeb; height: 780px; box-sizing: border-box; font-family: NotoS; color: #000;}
 #fp-nav ul li:last-child {display: none}
 #footer .contain h3 {left:0; top: 80px; font-size: 34px;  font-weight: 700; padding: 60px 0 10px;}
 #footer .contain p {font-size:18px; font-weight: 300; padding-bottom: 15px;}
