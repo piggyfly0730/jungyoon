@@ -108,7 +108,7 @@ button{background: none; border: none; cursor: pointer;}
 .p_a {position: absolute;}
 .p_r {position: relative;}
 .blind {font-size: 0; line-height: 0; width: 1px; height: 1px; overflow: hidden; position: absolute; top: 0; left: -9999px; text-indent: -9999px;}
-.contain{width: 1400px; margin: 0 auto; height: 100%; padding: 0 20px;}
+.contain{width: 1400px; height: 100%; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
 
 /* header */
 #header {
